@@ -37,12 +37,12 @@ fn minorScaleFromN(n: u8) [7]u8 {
 
 fn majorChordFromN(n: u8) [3]u8 {
     const scale = majorScaleFromN(n);
-    return [3]u8{ scale[0], scale[1], scale[2] };
+    return [3]u8{ scale[0], scale[2], scale[4] };
 }
 
 fn minorChordFromN(n: u8) [3]u8 {
     const scale = minorScaleFromN(n);
-    return [3]u8{ scale[0], scale[1], scale[2] };
+    return [3]u8{ scale[0], scale[2], scale[4] };
 }
 
 fn dimChordFromN(n: u8) [3]u8 {
